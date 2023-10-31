@@ -1,0 +1,15 @@
+#gif-full-width {
+    width: 100%;
+    height: 350px;
+    margin-top: 150px;
+    background: url("../../images/gif/first-intro.gif");
+    background-size: cover;
+    background-position: center;
+}
+
+@media (max-width: 991px) {
+    #gif-full-width {
+        margin-top: 20px;
+        height: 200px;
+    }
+}

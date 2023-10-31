@@ -1,0 +1,84 @@
+:root {
+  --blue-90: #150aac;
+  --blue-70: #1c81c4;
+  --blue-50: #3d99d4;
+  --blue-30: #37bbdd;
+  --blue-10: #53bab9;
+
+  --grey-50: #7a979d;
+  --grey-30: #a7bfc6;
+  --grey-3040: #a9c0c756;
+  --grey-10-50: #a9c0c781;
+
+  --primary: #6900c6;
+
+  --black: black;
+  --white: white;
+
+  --font-size-12: 12px;
+  --font-size-14: 14px;
+  --font-size-16: 16px;
+  --font-size-18: 18px;
+  --font-size-20: 20px;
+  --font-size-22: 20px;
+  --font-size-24: 24px;
+  --font-size-26: 26px;
+
+  --font-weight-100: 100;
+  --font-weight-200: 200;
+  --font-weight-300: 300;
+  --font-weight-400: 400;
+  --font-weight-500: 500;
+  --font-weight-600: 600;
+  --font-weight-700: 700;
+  --font-weight-800: 800;
+  --font-weight-900: 900;
+
+  --gradient: linear-gradient(
+    90deg,
+    var(--blue-90) 0%,
+    var(--blue-70) 17%,
+    var(--blue-50) 35%,
+    var(--blue-30) 55%,
+    var(--blue-10) 77%,
+    var(--grey-30) 100%
+  );
+}
+
+@font-face {
+  font-family: "corbell";
+  src: url("./font/corbell.ttf");
+}
+
+body {
+  font-family: "corbell" !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1530px !important;
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  font-weight: bold !important;
+}
+
+ul {
+  list-style: none !important;
+}
+
+section {
+  scroll-margin-top: 2rem;
+}
