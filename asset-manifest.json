@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/uvs-website-new/static/css/main.46bec335.css",
-    "main.js": "/uvs-website-new/static/js/main.1e11e9f1.js",
+    "main.css": "/uvs-website-new/static/css/main.15db3f10.css",
+    "main.js": "/uvs-website-new/static/js/main.f62f598e.js",
     "static/media/hands.1.png": "/uvs-website-new/static/media/hands.1.3745876ffb43991c229e.png",
     "static/media/first-intro.gif": "/uvs-website-new/static/media/first-intro.e60454877faeddfdefaa.gif",
     "static/media/big-img.1.png": "/uvs-website-new/static/media/big-img.1.e0b073e571b8cf7f2ce2.png",
     "static/media/corbell.ttf": "/uvs-website-new/static/media/corbell.07ed8370f02f88454989.ttf",
-    "static/media/logo.7.png": "/uvs-website-new/static/media/logo.7.5088d522909db41841ea.png",
+    "static/media/logo.11.png": "/uvs-website-new/static/media/logo.11.8bd441fa2a4ad2ad4f4f.png",
     "index.html": "/uvs-website-new/index.html",
-    "main.46bec335.css.map": "/uvs-website-new/static/css/main.46bec335.css.map",
-    "main.1e11e9f1.js.map": "/uvs-website-new/static/js/main.1e11e9f1.js.map"
+    "main.15db3f10.css.map": "/uvs-website-new/static/css/main.15db3f10.css.map",
+    "main.f62f598e.js.map": "/uvs-website-new/static/js/main.f62f598e.js.map"
   },
   "entrypoints": [
-    "static/css/main.46bec335.css",
-    "static/js/main.1e11e9f1.js"
+    "static/css/main.15db3f10.css",
+    "static/js/main.f62f598e.js"
   ]
 }
