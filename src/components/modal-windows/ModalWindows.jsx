@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Form } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
+import "./modal.style.css"
 
 function ModalWindows() {
   const [show, setShow] = useState(false);
@@ -11,10 +12,9 @@ function ModalWindows() {
 
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
+      <Button variant="primary" className='custom-btn' onClick={handleShow}>
         Buy
       </Button>
-
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>Modal heading</Modal.Title>
@@ -26,6 +26,14 @@ function ModalWindows() {
               <Form.Control
                 type="email"
                 placeholder="name@example.com"
+                autoFocus
+              />
+            </Form.Group>
+            <Form.Group className="mb-3" controlId="">
+              <Form.Label>Phone</Form.Label>
+              <Form.Control
+                type="phone"
+                placeholder="Phone"
                 autoFocus
               />
             </Form.Group>

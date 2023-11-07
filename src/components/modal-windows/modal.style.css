@@ -1,0 +1,33 @@
+.btn-custom-primary {
+    background: var(--blue-50);
+}
+
+.custom-btn {
+    position: relative;
+    width: 100%;
+    border: none !important;
+    color: black;
+    background: linear-gradient(
+        120deg,
+        var(--blue-90) 0%,
+        var(--blue-70) 17%,
+        var(--blue-50) 35%,
+        var(--blue-30) 55%,
+        var(--blue-10) 77%,
+        var(--grey-30) 100%
+    );
+    animation: gradient 5s infinite linear;
+    background-size: 400%;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 80% 0%;
+    }
+    50% {
+        background-position: 20% 100%;
+    }
+    100% {
+        background-position: 80% 0%;
+    }
+}

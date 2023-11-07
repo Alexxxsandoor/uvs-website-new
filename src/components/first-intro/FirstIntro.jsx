@@ -1,6 +1,7 @@
 import React from 'react';
 import './first-intro.style.css'
-import logo from '../../images/logo/logo.7.png'
+import logo from '../../images/logo/logo.11.png'
+// import logo from '../../images/logo/logo.8.png'
 import {motion} from 'framer-motion'
 
 const textAnimation = {
@@ -32,10 +33,13 @@ const FirstIntro = () => {
             </nav>
             <div className='container'>
                 <div className='d-flex flex-column justify-content-center align-items-center first-intro-content'>
-                    <motion.img custom={2} variants={textAnimation} src={logo}/>
-                    <motion.div custom={3} variants={textAnimation} className='text-center mt-4'>
+                    <div id="logo">
+                        <motion.img custom={2} variants={textAnimation} src={logo}/>
+                        <motion.h4 custom={3} variants={textAnimation} className='text-center'>UVS</motion.h4>
+                    </div>
+                    <motion.div id='uvs-text' custom={4} variants={textAnimation} className='text-center mt-4'>
                         <p>World Global Solutions Network</p>
-                        <p>by Veronika Ulianova</p>
+                        <p>Service Delivery</p>
                     </motion.div>
                 </div>
             </div>

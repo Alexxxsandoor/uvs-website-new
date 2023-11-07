@@ -66,7 +66,6 @@ const Pricing = () => {
                                 <p className='d-flex align-items-center'><i><FontAwesomeIcon  icon={faCircleCheck} /></i> <b>Quality of services</b></p>
                                 <p className='d-flex align-items-center'><i><FontAwesomeIcon  icon={faCircleCheck} /></i> <b>Quality of services</b></p>
                             </div>
-                            
                             <ModalWindows/>
                         </motion.div>
                         <motion.div custom={4} variants={cardAnimation} className='card d-flex flex-column justify-content-between'>
@@ -79,7 +78,6 @@ const Pricing = () => {
                                 <p className='d-flex align-items-center'><i><FontAwesomeIcon  icon={faCircleCheck} /></i> <b>Quality of services</b></p>
                                 <p className='d-flex align-items-center'><i><FontAwesomeIcon  icon={faCircleCheck} /></i> <b>Quality of services</b></p>
                             </div>
-                            
                             <ModalWindows/>
                         </motion.div>
                     </div>

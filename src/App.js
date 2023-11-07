@@ -21,6 +21,7 @@ function App() {
       <BigSoloImg/>
       <CenterText/>
       <Pricing/>
+
       <Footer/>
     </div>
   );

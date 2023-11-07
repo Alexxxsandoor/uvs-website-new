@@ -12,7 +12,9 @@ const Footer = () => {
                     <li><a href='/'><FontAwesomeIcon icon={faTwitter} /></a></li>
                     <li><a href='/'><FontAwesomeIcon icon={faFacebookF} /></a></li>
                     <li><a href='/'><FontAwesomeIcon icon={faInstagram} /></a></li>
+                    
                 </ul>
+                <p className='text-center mt-2'>© {new Date().getFullYear()}. UVS. All Rights Reserved</p>
             </div>
         </div>
     );
