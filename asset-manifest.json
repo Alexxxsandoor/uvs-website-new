@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/uvs-website-new/static/css/main.0f123719.css",
+    "main.css": "/uvs-website-new/static/css/main.081dea8e.css",
     "main.js": "/uvs-website-new/static/js/main.6ee07234.js",
     "static/media/corbell.ttf": "/uvs-website-new/static/media/corbell.07ed8370f02f88454989.ttf",
     "static/media/big-img.1.png": "/uvs-website-new/static/media/big-img.1.f7e91998539d5502598d.png",
@@ -9,11 +9,11 @@
     "static/media/big-img.2.png": "/uvs-website-new/static/media/big-img.2.1aa50d0c603a0c6e075d.png",
     "static/media/logo.12.svg": "/uvs-website-new/static/media/logo.12.cfdf2223dc9cb1938778b7c1328332f3.svg",
     "index.html": "/uvs-website-new/index.html",
-    "main.0f123719.css.map": "/uvs-website-new/static/css/main.0f123719.css.map",
+    "main.081dea8e.css.map": "/uvs-website-new/static/css/main.081dea8e.css.map",
     "main.6ee07234.js.map": "/uvs-website-new/static/js/main.6ee07234.js.map"
   },
   "entrypoints": [
-    "static/css/main.0f123719.css",
+    "static/css/main.081dea8e.css",
     "static/js/main.6ee07234.js"
   ]
 }
