@@ -50,12 +50,12 @@ const CardsProducts = () => {
                     id='cards-block'
                 >
                     <div className='custom-card d-flex justify-content-around flex-wrap'>
-                        <motion.div custom={1} variants={cardAnimation} className='card-block'>
+                        <motion.div custom={3} variants={cardAnimation} className='card-block'>
                             <div style={{backgroundImage:`url(${img3})`}} className='block-hands-img'>
                                 <h1>Business travel</h1>
                             </div>
                         </motion.div>
-                        <motion.div custom={2} variants={cardAnimation} className='card-block'>
+                        <motion.div custom={4} variants={cardAnimation} className='card-block'>
                             <div style={{backgroundImage:`url(${img4})`}} className='block-hands-img'>
                                 <h1>Individual Support</h1>
                             </div>

@@ -24,11 +24,12 @@ const FirstIntro = () => {
         <>
             <Navbar fixed="top" >
                <nav id='navigate'>
-                    <motion.ul custom={1} variants={textAnimation} className='d-flex'>
+                    <img src={logo}/>
+                    <ul className='d-flex'>
                         <li><a href='#title-info'>About</a></li>
                         <li><a href='#cards-products'>Services</a></li>
                         <li><a href='https://t.me/u_v_s' target='_blank'>Contact</a></li>
-                    </motion.ul>
+                    </ul>
                 </nav>
             </Navbar>
             <motion.section 
