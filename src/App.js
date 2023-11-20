@@ -19,9 +19,8 @@ function App() {
       <CardsProducts/>
       <LeftText/>
       <BigSoloImg/>
-      <CenterText/>
       <Pricing/>
-
+      <CenterText/>
       <Footer/>
     </div>
   );

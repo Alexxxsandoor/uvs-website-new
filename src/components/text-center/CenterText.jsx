@@ -3,7 +3,7 @@ import {motion} from 'framer-motion'
 
 const textAnimation = {
     hidden:{
-        x:200,
+        x:-100,
         opacity:0,
     },
     visible:{
@@ -15,14 +15,15 @@ const textAnimation = {
 
 const CenterText = () => {
     return (
-        <div id='center-text'>
+        <div id='center-text' className='mt-4'>
             <div className="container">
                 <motion.div             
                     initial="hidden"
                     whileInView="visible"  
-                    className='d-flex justify-content-center'
+                    className='d-flex flex-column text-center align-items-center justify-content-center'
                 >
-                    <motion.h4 variants={textAnimation}>Let's create something unique together. Drop us a line or give us a call to talk about the next big thing.</motion.h4>
+                    <motion.h4 variants={textAnimation}>We offer long-term turnkey cooperation.</motion.h4>
+                    <motion.h4 variants={textAnimation}>You can find out more details about cooperation by contacting us.</motion.h4>
                 </motion.div>
             </div>
         </div>

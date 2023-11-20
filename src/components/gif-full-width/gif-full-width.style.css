@@ -2,7 +2,8 @@
     width: 100%;
     height: 350px;
     margin-top: 150px;
-    background: url("../../images/gif/first-intro.gif");
+    /* background: url("../../images/gif/first-intro.gif"); */
+    background: url("../../images/big-img/big-img.2.png");
     background-size: cover;
     background-position: center;
 }

@@ -3,7 +3,7 @@ import {motion} from 'framer-motion'
 
 const textAnimation = {
     hidden:{
-        x:-200,
+        x:-100,
         opacity:0,
     },
     visible:{
@@ -21,8 +21,7 @@ const LeftText = () => {
             id='left-text'
         >
             <motion.div variants={textAnimation} className="container">
-                <h4>At Studio Lenzing, we are all about people. This is why we put collaboration and open dialogue at the heart of our work. We create partnerships at eye-level, working hand in hand for digital change.</h4>
-                <a>WHO WE ARE</a>
+                <h4>At UVS, we are all about people. We build new connections for growth. This is why we put collaboration and open dialogue at the heart of our work. We create partnerships at high level, working hand in hand for increasing our personal and market value.</h4>
             </motion.div>
         </motion.div>
     );

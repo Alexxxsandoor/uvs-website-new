@@ -7,7 +7,7 @@ import ModalWindows from '../modal-windows/ModalWindows';
 
 const textAnimation = {
     hidden:{
-        x:200,
+        x:-100,
         opacity:0,
     },
     visible:custom=>({
@@ -40,23 +40,48 @@ const Pricing = () => {
             <div className="container">
                 <div className="d-flex flex-wrap flex-column align-items-center justify-content-center">
                     <div className='text-center  pt-4'>
-                        <motion.h1 custom={1} variants={textAnimation}>Pricing Pricing Pricing</motion.h1>
-                        <motion.p custom={2} variants={textAnimation}>About the price about the price about the price about the price about the price about the price about the price</motion.p>
+                        <motion.h1 custom={1} variants={textAnimation}>Service Package</motion.h1>
+                        {/* <motion.p custom={2} variants={textAnimation}>About the price about the price about the price about the price about the price about the price about the price</motion.p> */}
                     </div>
                     <div className='cards flex-wrap d-flex align-items-center justify-content-around mt-5'>
                         <motion.div custom={3} variants={cardAnimation} className='card d-flex flex-column justify-content-between'>
-                            <p className='title'>Beginer</p>
-                            <p className='price'><span>200$</span>/month</p>
-                            <p className='content'>Why such a price and what is it briefly Why such a price and what is it briefly</p>
+                            <p className='title'>Exhibitions</p>
                             <div className='points'>
-                                <p className='d-flex align-items-center'><i><FontAwesomeIcon  icon={faCircleCheck} /></i> <b>Quality of services</b></p>
-                                <p className='d-flex align-items-center'><i><FontAwesomeIcon  icon={faCircleCheck} /></i> <b>Quality of services</b></p>
-                                <p className='d-flex align-items-center'><i><FontAwesomeIcon  icon={faCircleCheck} /></i> <b>Quality of services</b></p>
-                                <p className='d-flex align-items-center'><i><FontAwesomeIcon  icon={faCircleCheck} /></i> <b>Quality of services</b></p>
+                                <p className='d-flex align-items-center'><i><FontAwesomeIcon  icon={faCircleCheck} /></i> <b>Digital business exhibitions</b></p>
+                                <p className='d-flex align-items-center'><i><FontAwesomeIcon  icon={faCircleCheck} /></i> <b>Thematic business art exhibition</b></p>
                             </div>
                             <ModalWindows/>
                         </motion.div>
                         <motion.div custom={5} variants={cardAnimation} className='card primary d-flex flex-column justify-content-between'>
+                            <p className='title'>Corporate Support</p>
+                            <div className='points'>
+                                <p className='d-flex align-items-center'><i><FontAwesomeIcon  icon={faCircleCheck} /></i> <b>Business Travel</b></p>
+                                <p className='d-flex align-items-center'><i><FontAwesomeIcon  icon={faCircleCheck} /></i> <b>Conferences</b></p>
+                                <p className='d-flex align-items-center'><i><FontAwesomeIcon  icon={faCircleCheck} /></i> <b>Business Training</b></p>
+                                <p className='d-flex align-items-center'><i><FontAwesomeIcon  icon={faCircleCheck} /></i> <b>Advertising</b></p>
+                            </div>
+                            <ModalWindows/>
+                        </motion.div>
+                        <motion.div custom={4} variants={cardAnimation} className='card d-flex flex-column justify-content-between'>
+                            <p className='title'>Individual Support</p>
+                            <div className='points'>
+                                <p className='d-flex align-items-center'><i><FontAwesomeIcon  icon={faCircleCheck} /></i> <b>Real estate and accommodation</b></p>
+                                <p className='d-flex align-items-center'><i><FontAwesomeIcon  icon={faCircleCheck} /></i> <b>Events</b></p>
+                                <p className='d-flex align-items-center'><i><FontAwesomeIcon  icon={faCircleCheck} /></i> <b>Personal assistance</b></p>
+                                <p className='d-flex align-items-center'><i><FontAwesomeIcon  icon={faCircleCheck} /></i> <b>Legal adn financial support</b></p>
+                                <p className='d-flex align-items-center'><i><FontAwesomeIcon  icon={faCircleCheck} /></i> <b>Travel support</b></p>
+                                <p className='d-flex align-items-center'><i><FontAwesomeIcon  icon={faCircleCheck} /></i> <b>Business trainig</b></p>
+                            </div>
+                            <ModalWindows/>
+                        </motion.div>
+                    </div>
+                </div>
+            </div>
+        </motion.section>
+    );
+};
+
+{/* <motion.div custom={5} variants={cardAnimation} className='card primary d-flex flex-column justify-content-between'>
                             <p className='title'>Popular</p>
                             <p className='price'><span>500$</span>/month</p>
                             <p className='content'>Why such a price and what is it briefly Why such a price and what is it briefly</p>
@@ -67,24 +92,6 @@ const Pricing = () => {
                                 <p className='d-flex align-items-center'><i><FontAwesomeIcon  icon={faCircleCheck} /></i> <b>Quality of services</b></p>
                             </div>
                             <ModalWindows/>
-                        </motion.div>
-                        <motion.div custom={4} variants={cardAnimation} className='card d-flex flex-column justify-content-between'>
-                            <p className='title'>Custom</p>
-                            <p className='price'><span>300$</span>/month</p>
-                            <p className='content'>Why such a price and what is it briefly Why such a price and what is it briefly</p>
-                            <div className='points'>
-                                <p className='d-flex align-items-center'><i><FontAwesomeIcon  icon={faCircleCheck} /></i> <b>Quality of services</b></p>
-                                <p className='d-flex align-items-center'><i><FontAwesomeIcon  icon={faCircleCheck} /></i> <b>Quality of services</b></p>
-                                <p className='d-flex align-items-center'><i><FontAwesomeIcon  icon={faCircleCheck} /></i> <b>Quality of services</b></p>
-                                <p className='d-flex align-items-center'><i><FontAwesomeIcon  icon={faCircleCheck} /></i> <b>Quality of services</b></p>
-                            </div>
-                            <ModalWindows/>
-                        </motion.div>
-                    </div>
-                </div>
-            </div>
-        </motion.section>
-    );
-};
+                        </motion.div> */}
 
 export default Pricing;

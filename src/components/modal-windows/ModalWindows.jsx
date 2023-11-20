@@ -13,7 +13,7 @@ function ModalWindows() {
   return (
     <>
       <Button variant="primary" className='custom-btn' onClick={handleShow}>
-        Buy
+        Request
       </Button>
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>

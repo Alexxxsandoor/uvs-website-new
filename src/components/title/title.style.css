@@ -6,10 +6,16 @@
 }
 
 #title-info h4 {
-    max-width: 700px;
+    max-width: 760px;
+    margin-top: 20px;
 }
 #title-info p {
-    max-width: 400px;
+    max-width: 900px;
+}
+
+div.secondary-text span {
+    max-width: 440px;
+    padding: 10px;
 }
 
 @media (max-width: 991px) {
