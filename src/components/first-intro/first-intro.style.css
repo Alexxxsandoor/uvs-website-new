@@ -54,7 +54,7 @@
 }
 
 #first-intro p {
-    font-size: 24px;
+    font-size: 1rem;
 }
 
 .first-intro-content {
@@ -71,6 +71,7 @@
     font-size: 4rem;
     font-weight: 100 !important;
     margin-top: -20px;
+    color: var(--grey-30);
 }
 .first-intro-content #logo h4 span:first-child {
     margin-right: 30px;
