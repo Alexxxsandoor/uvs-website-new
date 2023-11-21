@@ -23,14 +23,18 @@ const FirstIntro = () => {
     return (
         <>
             <Navbar fixed="top" >
-               <nav id='navigate'>
-                    <img src={logo}/>
-                    <ul className='d-flex'>
-                        <li><a href='#title-info'>About</a></li>
-                        <li><a href='#cards-products'>Services</a></li>
-                        <li><a href='https://t.me/u_v_s' target='_blank'>Contact</a></li>
-                    </ul>
-                </nav>
+               <header id='navigate'>
+                    <nav className='container'>
+                        <div className='d-flex justify-content-between'>
+                            <img src={logo}/>
+                            <ul className='d-flex'>
+                                <li><a href='#title-info'>About</a></li>
+                                <li><a href='#cards-products'>Services</a></li>
+                                <li><a href='https://t.me/u_v_s' target='_blank'>Contact</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </header>
             </Navbar>
             <motion.section 
                 initial="hidden"

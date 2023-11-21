@@ -22,8 +22,8 @@ const CenterText = () => {
                     whileInView="visible"  
                     className='d-flex flex-column text-center align-items-center justify-content-center'
                 >
-                    <motion.h4 variants={textAnimation}>We offer long-term turnkey cooperation.</motion.h4>
-                    <motion.h4 variants={textAnimation}>You can find out more details about cooperation by contacting us.</motion.h4>
+                    <motion.h5 variants={textAnimation}>We offer long-term turnkey cooperation.</motion.h5>
+                    <motion.h5 variants={textAnimation}>You can find out more details about cooperation by contacting us.</motion.h5>
                 </motion.div>
             </div>
         </div>
