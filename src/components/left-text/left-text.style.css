@@ -3,3 +3,9 @@
     max-width: 1000px;
     text-align: justify !important;
 }
+
+@media (max-width: 768px) {
+    #left-text h4 {
+        padding: 20px 0;
+    }
+}

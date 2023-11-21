@@ -37,3 +37,18 @@ div.secondary-text span {
         max-width: 700px;
     }
 }
+@media (max-width: 524px) {
+    #title-info p {
+        min-width: 100%;
+        padding: 10px;
+    }
+    #title-info h4 {
+        margin: 0;
+    }
+    #title-info .secondary-text {
+        margin: 0;
+    }
+    #title-info {
+        margin: 0;
+    }
+}

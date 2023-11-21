@@ -108,6 +108,10 @@
     #first-intro p {
         font-size: 18px;
     }
+
+    #navigate {
+        padding: 20px 10px;
+    }
 }
 
 #uvs-text {
