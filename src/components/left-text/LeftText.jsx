@@ -1,3 +1,4 @@
+import ModalWindows from '../modal-windows/ModalWindows';
 import './left-text.style.css'
 import {motion} from 'framer-motion'
 
@@ -19,8 +20,9 @@ const LeftText = () => {
             initial="hidden"
             whileInView="visible" 
             id='left-text'
+            className="container"
         >
-            <motion.div variants={textAnimation} className="container">
+            <motion.div variants={textAnimation} >
                 <h4>At UVS, we are all about people. We build new connections for growth. This is why we put collaboration and open dialogue at the heart of our work. We create partnerships at high level, working hand in hand for increasing our personal and market value.</h4>
             </motion.div>
         </motion.div>

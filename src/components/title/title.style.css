@@ -1,5 +1,5 @@
 #title-info {
-    margin-top: 150px;
+    margin-top: 50px;
 }
 #title-info .secondary-text {
     margin-top: 5rem;
@@ -7,9 +7,10 @@
 
 #title-info h4 {
     max-width: 760px;
-    margin-top: 20px;
+    margin-top: 50px;
+    text-align: justify !important;
 }
-#title-info p {
+#title-info h6 {
     max-width: 330px;
     padding: 20px;
     text-align: justify;

@@ -5,7 +5,8 @@ import './first-intro.style.css'
 // import logo from '../../images/logo/logo.8.png'
 import logo from '../../images/logo/logo.12.svg'
 import {motion} from 'framer-motion'
-import Navbar from 'react-bootstrap/Navbar';
+
+import Header from '../header/Header';
 
 const textAnimation = {
     hidden:{
@@ -22,20 +23,7 @@ const textAnimation = {
 const FirstIntro = () => {
     return (
         <>
-            <Navbar fixed="top" >
-               <header id='navigate'>
-                    <nav className='container'>
-                        <div className='d-flex justify-content-between'>
-                            <img src={logo}/>
-                            <ul className='d-flex'>
-                                <li><a href='#title-info'>About</a></li>
-                                <li><a href='#cards-products'>Services</a></li>
-                                <li><a href='https://t.me/u_v_s' target='_blank'>Contact</a></li>
-                            </ul>
-                        </div>
-                    </nav>
-                </header>
-            </Navbar>
+            <Header/>
             <motion.section 
                 initial="hidden"
                 whileInView="visible" 

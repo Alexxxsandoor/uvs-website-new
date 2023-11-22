@@ -86,3 +86,38 @@
         height: 300px;
     }
 }
+.card-block {
+    position: relative;
+    transition: all 2s;
+}
+
+.card-block h2 {
+    display: none;
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transition: all 2s;
+    transform: translate(-50%, -50%);
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Chrome/Safari/Opera */
+    -khtml-user-select: none; /* Konqueror */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  not supported by any browser */
+}
+.card-block:hover h2 {
+    display: block;
+    transition: all 2s;
+}
+
+.card-block:hover .block-hands-img h1 {
+    display: none;
+    transition: all 2s;
+}
+
+.card-block:hover .block-hands-img {
+    filter: blur(4px);
+    transition: all 2s;
+}

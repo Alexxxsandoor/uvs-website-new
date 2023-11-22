@@ -25,7 +25,7 @@ const CardsProducts = () => {
     return (
         <section id='cards-products'>
             <div className='container'>
-                <p className='title-block'><b>Explore some of our services</b></p>
+                <h5 className='title-block'><b>Explore some of our services</b></h5>
                 <motion.div 
                     initial="hidden"
                     whileInView="visible" 
@@ -36,11 +36,13 @@ const CardsProducts = () => {
                             <div style={{backgroundImage:`url(${img1})`}} className='block-hands-img'>
                                 <h1>Business events Conferences</h1>
                             </div>
+                            <h2 className='custom-show-text'>Some text Some text Some text Some text Some text Some text Some text Some text</h2>
                         </motion.div>
                         <motion.div custom={2} variants={cardAnimation} className='card-block'>
                             <div style={{backgroundImage:`url(${img2})`}} className='block-hands-img'>
                                 <h1>Exhibitions</h1>
                             </div>
+                            <h2 className='custom-show-text'>Some text Some text Some text Some text Some text Some text Some text Some text</h2>
                         </motion.div>
                     </div>
                 </motion.div>
@@ -54,11 +56,13 @@ const CardsProducts = () => {
                             <div style={{backgroundImage:`url(${img3})`}} className='block-hands-img'>
                                 <h1>Business travel</h1>
                             </div>
+                            <h2 className='custom-show-text'>Some text Some text Some text Some text Some text Some text Some text Some text</h2>
                         </motion.div>
                         <motion.div custom={4} variants={cardAnimation} className='card-block'>
                             <div style={{backgroundImage:`url(${img4})`}} className='block-hands-img'>
                                 <h1>Individual Support</h1>
                             </div>
+                            <h2 className='custom-show-text'>Some text Some text Some text Some text Some text Some text Some text Some text</h2>
                         </motion.div>
                     </div>
                 </motion.div>
