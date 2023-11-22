@@ -10,7 +10,12 @@
     margin-top: 50px;
     text-align: justify !important;
 }
-#title-info h6 {
+#title-info h4.title {
+    max-width: 1400px;
+    margin-top: 50px;
+    text-align: justify !important;
+}
+#title-info h5 {
     max-width: 330px;
     padding: 20px;
     text-align: justify;
@@ -22,20 +27,22 @@ div.secondary-text span {
 }
 
 @media (max-width: 991px) {
-    #title-info .secondary-text {
-        margin-top: 2rem;
-    }
     #title-info p {
         text-align: left !important;
         max-width: 250px;
         padding: 10px;
     }
-    #title-info {
-        padding-top: 30px;
-    }
+
     #title-info h4 {
         padding: 10px;
         max-width: 700px;
+    }
+    #title-info h5 {
+        text-align: left;
+    }
+    #title-info .secondary-text {
+        justify-content: center !important;
+        margin-top: 1rem;
     }
 }
 @media (max-width: 524px) {

@@ -28,7 +28,7 @@ function ModalWindows(props) {
   return (
     <>
     {header ?
-    <a style={{cursor:"pointer"}}onClick={handleShow}>Message us</a> :
+    <a style={{cursor:"pointer"}}onClick={handleShow}>Contact</a> :
     <Button variant="primary" className='custom-btn' onClick={handleShow}>Request</Button>
   }
       

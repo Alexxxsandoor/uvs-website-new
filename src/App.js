@@ -18,7 +18,7 @@ function App() {
       <GifFullWidth/>
       <CardsProducts/>
       <LeftText/>
-      <BigSoloImg/>
+      {/* <BigSoloImg/> */}
       <Pricing/>
       <CenterText/>
       <Footer/>
