@@ -40,6 +40,9 @@
 .block-hands-img {
     cursor: pointer;
     position: relative;
+    background-size: cover;
+    background-position: center 35% !important;
+    filter: blur(2px);
 }
 .block-hands-img:hover h1 {
     transition: 0.2s;
@@ -87,6 +90,14 @@
     position: relative;
 }
 
+.card-block h1 {
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
 .card-block h2 {
     display: none;
     position: absolute;
@@ -108,7 +119,7 @@
     transition: all 2s;
 }
 
-.card-block:hover .block-hands-img h1 {
+.card-block:hover h1 {
     display: none;
     transition: all 2s;
 }

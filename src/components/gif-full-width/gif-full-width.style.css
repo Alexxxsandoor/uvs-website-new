@@ -3,9 +3,9 @@
     height: 250px;
     margin-top: 50px;
     /* background: url("../../images/gif/first-intro.gif"); */
-    background: url("../../images/big-img/big-img.2.png");
+    background: url("../../images/big-img/big-img.7.png");
+    background-position: center 35% !important;
     background-size: cover;
-    background-position: center;
 }
 
 @media (max-width: 991px) {
