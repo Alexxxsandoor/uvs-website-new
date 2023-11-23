@@ -1,9 +1,9 @@
 import React from 'react';
 import './CardsProducts.style.css'
-import img1 from '../../images/big-img/big-img.4.png'
-import img2 from '../../images/big-img/big-img.5.png'
-import img3 from '../../images/big-img/big-img.6.png'
-import img4 from '../../images/big-img/big-img.8.png'
+import Business_events from '../../images/big-img/Business_events.jpg'
+import Business_travel from '../../images/big-img/Business_travel.jpg'
+import Exhibitions from '../../images/big-img/Exhibitions.jpg'
+import Individual_support from '../../images/big-img/Individual_support.jpg'
 import {motion} from 'framer-motion'
 
 const cardAnimation = {
@@ -33,13 +33,13 @@ const CardsProducts = () => {
                 >
                     <div className='custom-card d-flex justify-content-around flex-wrap'>
                         <motion.div custom={1} variants={cardAnimation} className='card-block'>
-                            <div style={{backgroundImage:`url(${img1})`}} className='block-hands-img'>
+                            <div style={{backgroundImage:`url(${Business_events})`}} className='block-hands-img'>
                             </div>
                                 <h1>Business events Conferences</h1>
                             <h2 className='custom-show-text'>Some text Some text Some text Some text Some text Some text Some text Some text</h2>
                         </motion.div>
                         <motion.div custom={2} variants={cardAnimation} className='card-block'>
-                            <div style={{backgroundImage:`url(${img2})`}} className='block-hands-img'>
+                            <div style={{backgroundImage:`url(${Exhibitions})`}} className='block-hands-img'>
                             </div>
                                 <h1>Exhibitions</h1>
                             <h2 className='custom-show-text'>Some text Some text Some text Some text Some text Some text Some text Some text</h2>
@@ -53,13 +53,13 @@ const CardsProducts = () => {
                 >
                     <div className='custom-card d-flex justify-content-around flex-wrap'>
                         <motion.div custom={3} variants={cardAnimation} className='card-block'>
-                            <div style={{backgroundImage:`url(${img3})`}} className='block-hands-img'>
+                            <div style={{backgroundImage:`url(${Business_travel})`}} className='block-hands-img'>
                             </div>
                                 <h1>Business travel</h1>
                             <h2 className='custom-show-text'>Some text Some text Some text Some text Some text Some text Some text Some text</h2>
                         </motion.div>
                         <motion.div custom={4} variants={cardAnimation} className='card-block'>
-                            <div style={{backgroundImage:`url(${img4})`}} className='block-hands-img'>
+                            <div style={{backgroundImage:`url(${Individual_support})`}} className='block-hands-img'>
                             </div>
                                 <h1>Individual Support</h1>
                             <h2 className='custom-show-text'>Some text Some text Some text Some text Some text Some text Some text Some text</h2>
