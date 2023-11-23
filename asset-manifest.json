@@ -1,21 +1,20 @@
 {
   "files": {
-    "main.css": "/uvs-website-new/static/css/main.cf931a51.css",
-    "main.js": "/uvs-website-new/static/js/main.7187d980.js",
-    "static/media/big-img.7.png": "/uvs-website-new/static/media/big-img.7.44d23832c6b57579015b.png",
-    "static/media/big-img.6.png": "/uvs-website-new/static/media/big-img.6.eaf8f9c51800369543ca.png",
-    "static/media/big-img.8.png": "/uvs-website-new/static/media/big-img.8.707f225733bacd814f30.png",
-    "static/media/big-img.4.png": "/uvs-website-new/static/media/big-img.4.fbe840c89d7032d1684a.png",
-    "static/media/big-img.5.png": "/uvs-website-new/static/media/big-img.5.2c4d302e2b30c4f8a2a7.png",
+    "main.css": "/uvs-website-new/static/css/main.1261af86.css",
+    "main.js": "/uvs-website-new/static/js/main.e8449017.js",
+    "static/media/big_photo.jpg": "/uvs-website-new/static/media/big_photo.743cc00b3fed987eaa33.jpg",
+    "static/media/Business_travel.jpg": "/uvs-website-new/static/media/Business_travel.44d23832c6b57579015b.jpg",
+    "static/media/Individual_support.jpg": "/uvs-website-new/static/media/Individual_support.eaf8f9c51800369543ca.jpg",
+    "static/media/Business_events.jpg": "/uvs-website-new/static/media/Business_events.707f225733bacd814f30.jpg",
+    "static/media/Exhibitions.jpg": "/uvs-website-new/static/media/Exhibitions.fbe840c89d7032d1684a.jpg",
     "static/media/corbell.ttf": "/uvs-website-new/static/media/corbell.07ed8370f02f88454989.ttf",
-    "static/media/big-img.3.png": "/uvs-website-new/static/media/big-img.3.b39d063151e072aa1c71.png",
     "static/media/logo.12.svg": "/uvs-website-new/static/media/logo.12.cfdf2223dc9cb1938778b7c1328332f3.svg",
     "index.html": "/uvs-website-new/index.html",
-    "main.cf931a51.css.map": "/uvs-website-new/static/css/main.cf931a51.css.map",
-    "main.7187d980.js.map": "/uvs-website-new/static/js/main.7187d980.js.map"
+    "main.1261af86.css.map": "/uvs-website-new/static/css/main.1261af86.css.map",
+    "main.e8449017.js.map": "/uvs-website-new/static/js/main.e8449017.js.map"
   },
   "entrypoints": [
-    "static/css/main.cf931a51.css",
-    "static/js/main.7187d980.js"
+    "static/css/main.1261af86.css",
+    "static/js/main.e8449017.js"
   ]
 }
