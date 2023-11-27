@@ -1,6 +1,7 @@
-import ModalWindows from '../modal-windows/ModalWindows';
+import { useSelector } from 'react-redux';
 import './left-text.style.css'
 import {motion} from 'framer-motion'
+import LANGUAGE from '../../language';
 
 const textAnimation = {
     hidden:{
@@ -15,6 +16,9 @@ const textAnimation = {
   }
 
 const LeftText = () => {
+    const language = useSelector(store => store.language.language)
+    const singleText = LANGUAGE[language].singleText
+
     return (
         <motion.div 
             initial="hidden"
@@ -23,7 +27,7 @@ const LeftText = () => {
             className="container"
         >
             <motion.div variants={textAnimation} >
-                <h4>At UVS, we are all about people. We build new connections for growth. This is why we put collaboration and open dialogue at the heart of our work. We create partnerships at high level, working hand in hand for increasing our personal and market value.</h4>
+                <h4>{singleText}</h4>
             </motion.div>
         </motion.div>
     );

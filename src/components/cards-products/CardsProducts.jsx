@@ -5,6 +5,8 @@ import Business_travel from '../../images/big-img/Business_travel.jpg'
 import Exhibitions from '../../images/big-img/Exhibitions.jpg'
 import Individual_support from '../../images/big-img/Individual_support.jpg'
 import {motion} from 'framer-motion'
+import LANGUAGE from '../../language';
+import { useSelector } from 'react-redux';
 
 const cardAnimation = {
     hidden:{
@@ -22,10 +24,14 @@ const cardAnimation = {
 
 
 const CardsProducts = () => {
+    const language = useSelector(store => store.language.language)
+
+    const {title, card1,card2,card3,card4} = LANGUAGE[language].cardProduct
+
     return (
         <section id='cards-products'>
             <div className='container'>
-                <h5 className='title-block'><b>Explore some of our services</b></h5>
+                <h5 className='title-block'><b>{title}</b></h5>
                 <motion.div 
                     initial="hidden"
                     whileInView="visible" 
@@ -35,14 +41,14 @@ const CardsProducts = () => {
                         <motion.div custom={1} variants={cardAnimation} className='card-block'>
                             <div style={{backgroundImage:`url(${Business_events})`}} className='block-hands-img'>
                             </div>
-                                <h1>Business events Conferences</h1>
-                            <h2 className='custom-show-text'>Some text Some text Some text Some text Some text Some text Some text Some text</h2>
+                                <h1>{card1.title}</h1>
+                            <p className='custom-show-text'>{card1.body}</p>
                         </motion.div>
                         <motion.div custom={2} variants={cardAnimation} className='card-block'>
                             <div style={{backgroundImage:`url(${Exhibitions})`}} className='block-hands-img'>
                             </div>
-                                <h1>Exhibitions</h1>
-                            <h2 className='custom-show-text'>Some text Some text Some text Some text Some text Some text Some text Some text</h2>
+                                <h1>{card2.title}</h1>
+                            <p className='custom-show-text'>{card2.body}</p>
                         </motion.div>
                     </div>
                 </motion.div>
@@ -55,14 +61,14 @@ const CardsProducts = () => {
                         <motion.div custom={3} variants={cardAnimation} className='card-block'>
                             <div style={{backgroundImage:`url(${Business_travel})`}} className='block-hands-img'>
                             </div>
-                                <h1>Business travel</h1>
-                            <h2 className='custom-show-text'>Some text Some text Some text Some text Some text Some text Some text Some text</h2>
+                                <h1>{card3.title}</h1>
+                            <p className='custom-show-text'>{card3.body}</p>
                         </motion.div>
                         <motion.div custom={4} variants={cardAnimation} className='card-block'>
                             <div style={{backgroundImage:`url(${Individual_support})`}} className='block-hands-img'>
                             </div>
-                                <h1>Individual Support</h1>
-                            <h2 className='custom-show-text'>Some text Some text Some text Some text Some text Some text Some text Some text</h2>
+                                <h1>{card4.title}</h1>
+                            <p className='custom-show-text'>{card4.body}</p>
                         </motion.div>
                     </div>
                 </motion.div>

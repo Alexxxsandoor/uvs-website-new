@@ -1,7 +1,8 @@
 import React from 'react';
 import {motion} from 'framer-motion'
 import "./title.style.css"
-
+import { useSelector } from 'react-redux';
+import LANGUAGE from '../../language'
 
 const textLeftAnimation = {
     hidden:{
@@ -27,19 +28,21 @@ const textRightAnimation = {
   }
 
 const Title = () => {
-    return (
+    const language = useSelector(store => store.language.language)
+    const {title, body,firstSubsection,secondarySubsection} = LANGUAGE[language].firstTitle
 
+    return (
         <motion.section 
         initial="hidden"
         whileInView="visible" 
         id='title-info'
     >
         <div className='container'>
-            <motion.h4 custom={1} className='title' variants={textLeftAnimation}><b>Welcome to the world of UVS - my agency created to enhance the productivity of your life and your business.</b></motion.h4>
-            <motion.h4 custom={2} variants={textLeftAnimation}>We design, create, and organize personal experiences, business events, business travels, thematic conferences and exhibitions. We offer innovative solutions that provide an additional opportunity for your growth and the growth of your business.</motion.h4>
+            <motion.h4 custom={1} className='title' variants={textLeftAnimation}><b>{title}</b></motion.h4>
+            <motion.h4 custom={2} variants={textLeftAnimation}>{body}</motion.h4>
             <div className='secondary-text d-flex justify-content-end flex-wrap' >
-                <motion.h5 custom={3} variants={textRightAnimation}>More meaningful connections. Lifelong relationships. A positive dialogue between you and the world. </motion.h5>
-                <motion.h5 custom={4} variants={textRightAnimation}>We offer you to be by your side every step of the way.</motion.h5>
+                <motion.h5 custom={3} variants={textRightAnimation}>{firstSubsection}</motion.h5>
+                <motion.h5 custom={4} variants={textRightAnimation}>{secondarySubsection}</motion.h5>
             </div>
         </div>
     </motion.section>

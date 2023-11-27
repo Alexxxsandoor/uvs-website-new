@@ -7,8 +7,6 @@ import Footer from "./components/footer/Footer";
 import LeftText from "./components/left-text/LeftText";
 import CenterText from './components/text-center/CenterText'
 
-
-
 function App() {
   return (
     <div className="App">

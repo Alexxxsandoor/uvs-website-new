@@ -1,5 +1,7 @@
+import { useSelector } from 'react-redux';
 import './center-text.style.css'
 import {motion} from 'framer-motion'
+import LANGUAGE from '../../language';
 
 const textAnimation = {
     hidden:{
@@ -14,6 +16,9 @@ const textAnimation = {
   }
 
 const CenterText = () => {
+    const language = useSelector(store => store.language.language)
+    const {top, bottom} = LANGUAGE[language].centerText
+
     return (
         <div id='center-text' className='mt-4'>
             <div className="container">
@@ -22,8 +27,8 @@ const CenterText = () => {
                     whileInView="visible"  
                     className='d-flex flex-column text-center align-items-center justify-content-center'
                 >
-                    <motion.h5 variants={textAnimation}>We offer long-term turnkey cooperation.</motion.h5>
-                    <motion.h5 variants={textAnimation}>You can find out more details about cooperation by contacting us.</motion.h5>
+                    <motion.h5 variants={textAnimation}>{top}</motion.h5>
+                    <motion.h5 variants={textAnimation}>{bottom}</motion.h5>
                 </motion.div>
             </div>
         </div>

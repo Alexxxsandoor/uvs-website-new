@@ -33,11 +33,27 @@
     border-bottom: 5px solid rgba(255, 255, 255, 0.5);
     transition: 0.1s linear;
 }
+#navigate div.dropdown-menu.show {
+    min-width: 0px !important;
+    text-align: center;
+    padding: 0 !important;
+}
+#navigate div.dropdown-menu.show .dropdown-item {
+    padding: 10px !important;
+}
+
+#navigate .nav-item a:hover {
+    border-bottom: 0px !important;
+    border-radius: 5px;
+}
 
 @media (max-width: 730px) {
     #navigate {
         padding: 20px 10px;
     }
+}
+#nav-dropdown-dark-example {
+    padding: 0 !important;
 }
 
 @keyframes gradient {
@@ -49,5 +65,11 @@
     }
     100% {
         background-position: 80% 0%;
+    }
+}
+
+@media (max-width: 798px) {
+    #navigate li a {
+        margin-right: 9.5px !important;
     }
 }

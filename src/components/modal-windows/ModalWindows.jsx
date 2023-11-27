@@ -3,8 +3,16 @@ import { Form } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import "./modal.style.css"
+import LANGUAGE from '../../language';
+import { useSelector } from 'react-redux';
 
 function ModalWindows(props) {
+  const language = useSelector(store => store.language.language)
+  const contact = LANGUAGE[language].headers.contact
+  const buttonName = LANGUAGE[language].button    
+  const {title, email, phone, textarea,close, send} = LANGUAGE[language].modalWindow
+
+
   const {header} = props
 
   const [show, setShow] = useState(false);
@@ -28,18 +36,18 @@ function ModalWindows(props) {
   return (
     <>
     {header ?
-    <a style={{cursor:"pointer"}}onClick={handleShow}>Contact</a> :
-    <Button variant="primary" className='custom-btn' onClick={handleShow}>Request</Button>
+    <a style={{cursor:"pointer"}}onClick={handleShow}>{contact}</a> :
+    <Button variant="primary" className='custom-btn' onClick={handleShow}>{buttonName}</Button>
   }
       
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Modal heading</Modal.Title>
+          <Modal.Title>{title}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <Form>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-              <Form.Label>Email address</Form.Label>
+              <Form.Label>{email}</Form.Label>
               <Form.Control
                 type="email"
                 placeholder="name@example.com"
@@ -49,20 +57,19 @@ function ModalWindows(props) {
               />
             </Form.Group>
             <Form.Group className="mb-3" controlId="">
-              <Form.Label>Phone</Form.Label>
+              <Form.Label>{phone}</Form.Label>
               <Form.Control
                 type="phone"
-                placeholder="Phone"
+                placeholder={phone}
                 onChange={e=>setUserInputs({...userInputs, phone: e.target.value})}
                 value={userInputs.phone}
-                autoFocus
               />
             </Form.Group>
             <Form.Group
               className="mb-3"
               controlId="exampleForm.ControlTextarea1"
             >
-              <Form.Label>Example textarea</Form.Label>
+              <Form.Label>{textarea}</Form.Label>
               <Form.Control as="textarea" rows={3} 
                  onChange={e=>setUserInputs({...userInputs, textarea: e.target.value})}
                  value={userInputs.textarea}
@@ -73,10 +80,10 @@ function ModalWindows(props) {
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
-            Close
+            {close}
           </Button>
           <Button className={buttonShow} variant="primary" onClick={handleClose}>
-            Send
+            {send}
           </Button>
         </Modal.Footer>
       </Modal>
