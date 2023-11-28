@@ -10,7 +10,7 @@ function ModalWindows(props) {
   const language = useSelector(store => store.language.language)
   const contact = LANGUAGE[language].headers.contact
   const buttonName = LANGUAGE[language].button    
-  const {title, email, phone, textarea,close, send} = LANGUAGE[language].modalWindow
+  const {title, email, phone, textarea,close, send, name} = LANGUAGE[language].modalWindow
 
 
   const {header} = props
@@ -24,11 +24,12 @@ function ModalWindows(props) {
   const [userInputs, setUserInputs] = useState({
     email:"",
     phone: "",
-    textarea: ""
+    textarea: "",
+    name:""
   })
 
   useEffect(()=>{
-    if(userInputs.email && userInputs.phone) setButtonShow("")
+    if(userInputs.email && userInputs.phone && userInputs.name) setButtonShow("")
     else setButtonShow("disabled")
 
   },[userInputs])
@@ -54,6 +55,15 @@ function ModalWindows(props) {
                 onChange={e=>setUserInputs({...userInputs, email: e.target.value})}
                 value={userInputs.email}
                 autoFocus
+              />
+            </Form.Group>
+            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+              <Form.Label>{name}</Form.Label>
+              <Form.Control
+                type="text"
+                placeholder={name}
+                onChange={e=>setUserInputs({...userInputs, name: e.target.value})}
+                value={userInputs.name}
               />
             </Form.Group>
             <Form.Group className="mb-3" controlId="">

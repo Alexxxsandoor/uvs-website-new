@@ -57,6 +57,7 @@ const LANGUAGE = {
         modalWindow:{
             title:`Feedback`,
             email:`Email`,
+            name:"Name",
             phone:`Phone`,
             textarea:`Message`,
             close:`Close`,
@@ -102,7 +103,7 @@ const LANGUAGE = {
             packages:[
                 {
                     title:`ІНДИВІДУАЛЬНА ПІДТРИМКА`,
-                    items:["Нерухомість та житло","Події","Особиста допомога", "Юридична та фінансова підтримка", "Туристична підтримка", "Бізнес-тренінг"]
+                    items:["Нерухомість та житло","Події","Особиста допомога", "Юридичний супровід", "Туристична підтримка", "Бізнес-тренінг"]
                 },
                 {
                     title:`КОРПОРАТИВНА ПІДТРИМКА`,
@@ -122,6 +123,7 @@ const LANGUAGE = {
         },
         modalWindow:{
             title:`Зворотній зв'язок`,
+            name:"Ім'я",
             email:`Email`,
             phone:`Телефон`,
             textarea:`Повідомлення`,
