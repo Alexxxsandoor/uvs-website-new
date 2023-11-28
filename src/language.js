@@ -36,7 +36,7 @@ const LANGUAGE = {
             packages:[
                 {
                     title:`INDIVIDUAL SUPPORT`,
-                    items:["Real estate and accommodation","Events","Personal assistance", "Legal and financial support", "Travel support", "Business trainig"]
+                    items:["Real estate and accommodation","Events","Personal assistance", "Legal support", "Travel support", "Business trainig"]
                 },
                 {
                     title:`CORPORATE SUPPORT`,
