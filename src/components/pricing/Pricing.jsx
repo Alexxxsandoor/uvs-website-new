@@ -47,8 +47,8 @@ const Pricing = () => {
             >
                 <div className="container">
                     <div className="d-flex flex-wrap flex-column align-items-center justify-content-center">
-                        <motion.div className='text-center custom-line py-1'>
-                            <h2 custom={1} variants={textAnimation}>{title}</h2>
+                        <motion.div custom={1} variants={textAnimation} className='text-center custom-line py-1'>
+                            <h2>{title}</h2>
                         </motion.div>
                         <div className='cards flex-wrap d-flex align-items-center justify-content-around mt-5'>
                             {packages.map((el,index)=>(
