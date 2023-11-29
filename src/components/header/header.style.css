@@ -73,3 +73,12 @@
         margin-right: 9.5px !important;
     }
 }
+@media (max-width: 500px) {
+    #navigate li a {
+        margin-right: 7px !important;
+        font-size: 14px;
+    }
+    #navigate ul {
+        padding: 0 !important;
+    }
+}
