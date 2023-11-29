@@ -1,5 +1,9 @@
 const LANGUAGE = {
     eng:{
+        intro:{
+            top:`United Business Travel Solutions`,
+            bottom:`Conferences/Events`
+        },
         firstTitle:{
             title:"Welcome to UVS, your premier destination for business travel and event experiences. Our agency is dedicated to enhancing your productivity and ensuring your comfort every step of the way.",
             body:`A modern company that provides a full range of services, works with partners worldwide and creates an efficient experience for business owners and their companies. We organise business trips worldwide, provide personal assistance in the business direction, and improve the efficiency of employees and company performance by creating useful events and meetings.
@@ -66,6 +70,10 @@ const LANGUAGE = {
         
     },
     ukr:{
+        intro:{
+            top:`Об'єднані рішення для ділових- подорожей`,
+            bottom:`Конференції/Події`
+        },
         firstTitle:{
             title:`Ласкаво просимо до UVS провідного і привабливого вибору для тих, хто шукає якісні послуги в сфері бізнесу та подорожей. Наша агенція присвячена підвищенню вашої продуктивності та забезпеченню вашого комфорту на кожному кроці.`,
             body:`Сучасна компанія, яка надає повний спектр послуг, працює з партнерами по всьому світу та створює ефективний досвід для власників  бізнесів та їх компаній. Організовуємо ділові подорожі по всьому Світу, забезпечуємо персональний супровід в діловому напрямку, піднімаємо ефективність співробітників та показники компаній за рахунок створення корисних заходів та зустрічей. 

@@ -7,6 +7,8 @@ import logo from '../../images/logo/logo.12.svg'
 import {motion} from 'framer-motion'
 
 import Header from '../header/Header';
+import { useSelector } from 'react-redux';
+import LANGUAGE from '../../language';
 
 const textAnimation = {
     hidden:{
@@ -21,6 +23,8 @@ const textAnimation = {
   }
 
 const FirstIntro = () => {
+    const language = useSelector(store => store.language.language)
+    const {top,bottom} = LANGUAGE[language].intro
     return (
         <>
             <Header/>
@@ -36,8 +40,8 @@ const FirstIntro = () => {
                             <motion.h4 custom={3} variants={textAnimation} className='text-center'><span>U</span><span>V</span><span>S</span></motion.h4>
                         </div>
                         <motion.div id='uvs-text' custom={4} variants={textAnimation} className='text-center mt-4'>
-                            <p>World Global Solutions Network</p>
-                            <p>Service Delivery</p>
+                            <p>{top}</p>
+                            <p>{bottom}</p>
                         </motion.div>
                     </div>
                 </div>

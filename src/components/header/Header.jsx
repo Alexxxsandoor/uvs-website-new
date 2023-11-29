@@ -25,10 +25,10 @@ const Header = () => {
                                 <li>
                                     <NavDropdown
                                         id="nav-dropdown-dark-example"
-                                        title={language[0].toUpperCase() + language.slice(1)}
+                                        title={language}
                                         >
-                                            <NavDropdown.Item onClick={()=>dispatch(toggleLanguage("eng"))}>Eng</NavDropdown.Item>
-                                            <NavDropdown.Item onClick={()=>dispatch(toggleLanguage("ukr"))}>Ukr</NavDropdown.Item>
+                                            <NavDropdown.Item onClick={()=>dispatch(toggleLanguage("eng"))}>eng</NavDropdown.Item>
+                                            <NavDropdown.Item onClick={()=>dispatch(toggleLanguage("ukr"))}>ukr</NavDropdown.Item>
                                     </NavDropdown>
                                 </li>
                             </ul>
