@@ -21,7 +21,7 @@ const Header = () => {
                             <ul className='d-flex align-items-center'>
                                 <li><a href='#title-info'>{about}</a></li>
                                 <li><a href='#cards-products'>{services}</a></li>
-                                <li><ModalWindows header={true}/></li>
+                                <li><ModalWindows header={true} packageSelect={"не вибрано"}/></li>
                                 <li>
                                     <NavDropdown
                                         id="nav-dropdown-dark-example"

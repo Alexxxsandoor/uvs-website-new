@@ -1,0 +1,19 @@
+#send-message {
+    position: fixed;
+    top: 130px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    max-width: 300px;
+    z-index: 100;
+    opacity: 0;
+    animation: ani 1s forwards;
+}
+@keyframes ani {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

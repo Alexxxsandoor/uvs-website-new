@@ -57,7 +57,7 @@ const Pricing = () => {
                                     <div className='points'>
                                         {el.items.map(el=><p  className='d-flex align-items-center'><i><FontAwesomeIcon  icon={faCircleCheck} /></i> <b>{el}</b></p>)}
                                     </div>
-                                    <ModalWindows/>
+                                    <ModalWindows packageSelect={el.title} />
                                 </motion.div>
                             ))}                            
                         </div>
