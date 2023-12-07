@@ -44,12 +44,12 @@ function ModalWindows({header, packageSelect} ) {
   const handleSubmit = async ()=>{
     try {
       await emailjs.send(SERVICE_ID, TEMPLATE_ID, {
-       from_name: userInputs.name,
-       from_phone:  userInputs.phone,
-       from_email: userInputs.email,
-       from_message: userInputs.textarea,
-       from_package: userInputs.package,
-         recipient: 'alexxxsandoor@gmail.com'
+       name: userInputs.name,
+       phone:  userInputs.phone,
+       email: userInputs.email,
+       message: userInputs.textarea,
+       package: userInputs.package,
+         recipient: 'uvsautobot@gmail.com'
       });
       setFeedbackMessange({
         message:emailSendedTrue,
