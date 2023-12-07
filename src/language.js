@@ -65,13 +65,15 @@ const LANGUAGE = {
             phone:`Phone`,
             textarea:`Message`,
             close:`Close`,
-            send:`Send`
+            send:`Send`,
+            emailSendedTrue:`Email successfully sent`,
+            emailSendedFalse:`Email NOT sent`
         }
         
     },
     ukr:{
         intro:{
-            top:`Об'єднані рішення для ділових- подорожей`,
+            top:`Об'єднані рішення для ділових-подорожей`,
             bottom:`Конференції/Події`
         },
         firstTitle:{
@@ -136,7 +138,9 @@ const LANGUAGE = {
             phone:`Телефон`,
             textarea:`Повідомлення`,
             close:`Закрити`,
-            send:`Надіслати`
+            send:`Надіслати`,
+            emailSendedTrue:`Електронна пошта успішно надіслана`,
+            emailSendedFalse:`Електронна пошта НЕ надіслана`
         }
     }
 }

@@ -5,7 +5,7 @@ const SendMessage = ({message}) => {
 
     return (
         <div id='send-message'>
-            <Alert variant={message.variant} >
+            <Alert  variant="warning">
                 {message.message}
             </Alert>
         </div>

@@ -16,7 +16,7 @@ function ModalWindows({header, packageSelect} ) {
   const language = useSelector(store => store.language.language)
   const contact = LANGUAGE[language].headers.contact
   const buttonName = LANGUAGE[language].button    
-  const {title, email, phone, textarea,close, send, name} = LANGUAGE[language].modalWindow
+  const {title, email, phone, textarea,close, send, name,emailSendedTrue,emailSendedFalse} = LANGUAGE[language].modalWindow
 
   
   const [showFeedbackMessange, setShowFeedbackMessange] = useState(false)
@@ -49,14 +49,14 @@ function ModalWindows({header, packageSelect} ) {
          recipient: 'alexxxsandoor@gmail.com'
       });
       setFeedbackMessange({
-        message:"email successfully sent check inbox",
+        message:emailSendedTrue,
         variant:"primary"
       });
       setShowFeedbackMessange(true)
     } catch (error) {
       console.error(error);
       setFeedbackMessange({
-        message:"email NOT sent check inbox",
+        message:emailSendedFalse,
         variant:"warning"
       });
       setShowFeedbackMessange(true)
@@ -86,7 +86,7 @@ function ModalWindows({header, packageSelect} ) {
 
   return (
     <>
-    {showFeedbackMessange && <SendMessage message={feedbackMessange}/>}
+    {!showFeedbackMessange && <SendMessage message={feedbackMessange}/>}
 
     {header ?
     <a style={{cursor:"pointer"}}onClick={handleShow}>{contact}</a> :
