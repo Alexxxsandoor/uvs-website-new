@@ -20,6 +20,16 @@
     background-size: 400%;
 }
 
+.social-links a {
+    color: var(--blue-70) !important;
+    text-decoration: none !important;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.social-links a:hover {
+    color: var(--blue-30) !important;
+}
+
 @keyframes gradient {
     0% {
         background-position: 80% 0%;

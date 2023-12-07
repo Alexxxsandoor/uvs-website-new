@@ -94,3 +94,7 @@ ul {
 section {
   scroll-margin-top: 5rem !important;
 }
+
+.mr-1 {
+  margin-right: 5px;
+}

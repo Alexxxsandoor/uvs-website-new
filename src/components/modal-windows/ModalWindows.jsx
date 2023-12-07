@@ -7,6 +7,9 @@ import "./modal.style.css"
 import LANGUAGE from '../../language';
 import { useSelector } from 'react-redux';
 import SendMessage from '../send-message/SendMessage';
+import { faLinkedin, faTelegram } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 const PUBLIC_KEY = "PUBLIC_KEY"
 const SERVICE_ID = "SERVICE_ID"
@@ -86,7 +89,7 @@ function ModalWindows({header, packageSelect} ) {
 
   return (
     <>
-    {!showFeedbackMessange && <SendMessage message={feedbackMessange}/>}
+    {showFeedbackMessange && <SendMessage message={feedbackMessange}/>}
 
     {header ?
     <a style={{cursor:"pointer"}}onClick={handleShow}>{contact}</a> :
@@ -146,12 +149,21 @@ function ModalWindows({header, packageSelect} ) {
           </Form>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            {close}
-          </Button>
-          <Button disabled={buttonShow} variant="primary" onClick={handleSubmit}>
-            {send}
-          </Button>
+          <div className='w-100 d-flex align-items-center justify-content-between'>
+            <div className='social-links'>
+              <a className='mr-1'><FontAwesomeIcon icon={faTelegram} size="xl" /></a>
+              <a className='mr-1'><FontAwesomeIcon icon={faLinkedin} size="xl" /></a>
+              <a ><FontAwesomeIcon icon={faEnvelope}  size="xl" /></a>
+            </div>
+            <div>
+              <Button variant="secondary" className='mr-1' onClick={handleClose}>
+                {close}
+              </Button>
+              <Button disabled={buttonShow} variant="primary" onClick={handleSubmit}>
+                {send}
+              </Button>
+            </div>
+          </div>
         </Modal.Footer>
       </Modal>
     </>
