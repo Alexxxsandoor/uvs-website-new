@@ -11,9 +11,9 @@ import { faLinkedin, faTelegram } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
-const PUBLIC_KEY = "PUBLIC_KEY"
-const SERVICE_ID = "SERVICE_ID"
-const TEMPLATE_ID = "TEMPLATE_ID"
+const PUBLIC_KEY = "NewgKFFuJ9gIrgylr"
+const SERVICE_ID = "service_iqq3rz7"
+const TEMPLATE_ID = "template_4r2cqty"
 
 function ModalWindows({header, packageSelect} ) {
   const language = useSelector(store => store.language.language)
