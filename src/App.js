@@ -7,6 +7,7 @@ import Footer from "./components/footer/Footer";
 import LeftText from "./components/left-text/LeftText";
 import CenterText from "./components/text-center/CenterText";
 import ThirdText from "./components/title/ThirdText";
+import SmallCards from "./components/small-cards/SmallCards";
 
 function App() {
   return (
@@ -17,7 +18,8 @@ function App() {
       <CardsProducts />
       <ThirdText />
       <LeftText />
-      <Pricing />
+      <SmallCards/>
+      {/* <Pricing /> */}
       <CenterText />
       <Footer />
     </div>

@@ -42,13 +42,17 @@ const CardsProducts = () => {
                             <div style={{backgroundImage:`url(${Business_events})`}} className='block-hands-img'>
                             </div>
                                 <h1>{card1.title}</h1>
-                            <p className='custom-show-text'>{card1.body}</p>
+                                <div className='custom-show-text text-center'>
+                                    {card1.body.map(text=><p>{text}</p>)}
+                                </div>    
                         </motion.div>
                         <motion.div custom={2} variants={cardAnimation} className='card-block'>
                             <div style={{backgroundImage:`url(${Exhibitions})`}} className='block-hands-img'>
                             </div>
                                 <h1>{card2.title}</h1>
-                            <p className='custom-show-text'>{card2.body}</p>
+                                <div className='custom-show-text text-center'>
+                                    {card2.body.map(text=><p>{text}</p>)}
+                                </div> 
                         </motion.div>
                     </div>
                 </motion.div>
@@ -62,13 +66,17 @@ const CardsProducts = () => {
                             <div style={{backgroundImage:`url(${Business_travel})`}} className='block-hands-img'>
                             </div>
                                 <h1>{card3.title}</h1>
-                            <p className='custom-show-text'>{card3.body}</p>
+                                <div className='custom-show-text text-center'>
+                                    {card3.body.map(text=><p>{text}</p>)}
+                                </div> 
                         </motion.div>
                         <motion.div custom={4} variants={cardAnimation} className='card-block'>
                             <div style={{backgroundImage:`url(${Individual_support})`}} className='block-hands-img'>
                             </div>
                                 <h1>{card4.title}</h1>
-                            <p className='custom-show-text'>{card4.body}</p>
+                                <div className='custom-show-text text-center'>
+                                    {card4.body.map(text=><p>{text}</p>)}
+                                </div> 
                         </motion.div>
                     </div>
                 </motion.div>
