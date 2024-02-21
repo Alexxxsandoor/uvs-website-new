@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 @import url("https://fonts.cdnfonts.com/css/helvetica-neue-5");
+@import url("./font/halvar-font/stylesheet.css");
 :root {
   --blue-90: #150aac;
   --blue-70: #1c81c4;
@@ -57,7 +58,8 @@ body {
   /* font-family: "corbell" !important; */
   /* font-family: "Roboto Slab", serif !important; */
   /* font-family: "Open Sans", sans-serif; */
-  font-family: "Helvetica Neue", sans-serif;
+  /* font-family: "Helvetica Neue", sans-serif; */
+  font-family: "Halvar Breit Lt", sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-touch-callout: none;
@@ -71,11 +73,6 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
-@media (min-width: 1400px) {
-  /* .container {
-    max-width: 1530px !important;
-  } */
-}
 h1,
 h2,
 h3,
@@ -84,7 +81,7 @@ h5,
 h6,
 p,
 a {
-  font-weight: 300 !important;
+  font-weight: 200 !important;
 }
 
 ul {

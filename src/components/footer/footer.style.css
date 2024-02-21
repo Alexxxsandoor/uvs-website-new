@@ -34,3 +34,13 @@
 #footer ul {
     margin: 0 !important;
 }
+
+#footer span b {
+    font-weight: bold;
+}
+#footer span b:first-child {
+    color: #0057b8;
+}
+#footer span b:last-child {
+    color: #ffd700;
+}

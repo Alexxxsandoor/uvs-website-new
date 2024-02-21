@@ -2,6 +2,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './small-cards.style.css'
 import { faChartLine, faChartSimple, faClipboardCheck, faClock, faCopyright, faEarthAmericas, faHandshake, faPeopleGroup } from '@fortawesome/free-solid-svg-icons';
 import {motion} from 'framer-motion'
+import LANGUAGE from '../../language';
+import { useSelector } from 'react-redux';
 
 const cardAnimation = {
     hidden:{
@@ -16,40 +18,9 @@ const cardAnimation = {
   }
 
 const SmallCards = () => {
-    const card =[
-        {
-            icon: faChartLine,
-            content: `Піднімаємо ефективність співробітників `
-        },
-        {
-            icon: faChartSimple,
-            content: `Піднімаємо показники компаній`
-        },
-        {
-            icon: faClock,
-            content: `Економимо ваш час`
-        },
-        {
-            icon: faEarthAmericas,
-            content: `Забезпечуємо комфорт в будь-якій точці світу `
-        },
-        {
-            icon: faHandshake,
-            content: `Нові партнерства стають ще більш доступними`
-        },
-        {
-            icon: faCopyright,
-            content: `Впізнаваність бренду`
-        },
-        {
-            icon: faPeopleGroup,
-            content: `Додатковий цільовий трафік`
-        },
-        {
-            icon: faClipboardCheck,
-            content: `Підіймаємо рівень кваліфікації та особистого розвитку`
-        },
-    ]
+    const language = useSelector(store => store.language.language)
+    const smallCardContents = LANGUAGE[language].smallCard
+    const cardIcons = [faChartLine, faChartSimple, faClock, faEarthAmericas, faHandshake, faCopyright, faPeopleGroup, faClipboardCheck]
     return (
         <div 
 
@@ -60,10 +31,10 @@ const SmallCards = () => {
                 whileInView="visible"  
                 id='cards-on-key-content'
             >
-                {card.map((card, index)=>
+                {smallCardContents.map((card, index)=>
                     <motion.div custom={index+1} variants={cardAnimation} className='small-card text-center'>
-                        <p className='mb-3 custom-icons'><FontAwesomeIcon icon={card.icon} size='2xl'/></p>
-                        <p>{card.content}</p>
+                        <p className='mb-3 custom-icons'><FontAwesomeIcon icon={cardIcons[index]} size='2xl'/></p>
+                        <p>{card}</p>
                     </motion.div>   
                 )}
             </motion.div>

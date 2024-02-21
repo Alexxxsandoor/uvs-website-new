@@ -27,8 +27,9 @@ const Header = () => {
                                         id="nav-dropdown-dark-example"
                                         title={language}
                                         >
-                                            <NavDropdown.Item onClick={()=>dispatch(toggleLanguage("eng"))}>eng</NavDropdown.Item>
                                             <NavDropdown.Item onClick={()=>dispatch(toggleLanguage("ukr"))}>ukr</NavDropdown.Item>
+                                            <NavDropdown.Item onClick={()=>dispatch(toggleLanguage("eng"))}>eng</NavDropdown.Item>
+                                            <NavDropdown.Item onClick={()=>dispatch(toggleLanguage("rus"))}>rus</NavDropdown.Item>
                                     </NavDropdown>
                                 </li>
                             </ul>

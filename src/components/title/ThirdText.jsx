@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { useSelector } from "react-redux";
 import LANGUAGE from "../../language";
 import "./title.style.css";
+import bgImg from '../../images/bg-image.svg' 
 
 const textLeftAnimation = {
   hidden: {
@@ -32,8 +33,11 @@ const ThirdText = () => {
   const { body, firstSubsection, secondarySubsection } =
     LANGUAGE[language].firstTitle;
   return (
-    <div className="container">
+    <div className="container" >
+          
       <motion.div initial="hidden" whileInView="visible" id="title-info">
+      <motion.img custom={2} variants={textLeftAnimation} id="title-info-bg-img-fir" src={bgImg} alt=""/>  
+      <motion.img custom={2} variants={textLeftAnimation} id="title-info-bg-img-sec" src={bgImg} alt=""/>  
         <motion.h4 custom={1} variants={textLeftAnimation}>
           {body}
         </motion.h4>
