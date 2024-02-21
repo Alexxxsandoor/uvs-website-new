@@ -65,10 +65,14 @@ div.secondary-text span {
     position: relative;
 }
 
-#title-info #title-info-bg-img-fir,
-#title-info #title-info-bg-img-sec {
+#title-info #title-info-bg-img-fir {
     position: absolute;
     width: 40%;
+}
+
+#title-info #title-info-bg-img-sec {
+    position: absolute;
+    width: 25%;
 }
 #title-info #title-info-bg-img-fir {
     right: 0;
