@@ -3,9 +3,8 @@ import './first-intro.style.css'
 // import logo from '../../images/logo/logo.11.png'
 // import logo from '../../images/logo/logo.3.png'
 // import logo from '../../images/logo/logo.8.png'
-import logo from '../../images/logo/logo.12.svg'
+import logo from '../../images/logo/logo12.svg'
 import {motion} from 'framer-motion'
-
 import Header from '../header/Header';
 import { useSelector } from 'react-redux';
 import LANGUAGE from '../../language';

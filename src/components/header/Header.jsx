@@ -1,4 +1,4 @@
-import logo from '../../images/logo/logo.12.svg'
+import logo from '../../images/logo/logo12.svg'
 import ModalWindows from '../modal-windows/ModalWindows';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
