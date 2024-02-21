@@ -16,9 +16,9 @@
     text-align: justify !important;
 }
 #title-info h5 {
-    max-width: 330px;
+    max-width: 360px;
     padding: 20px;
-    text-align: justify;
+    text-align: left;
 }
 
 div.secondary-text span {
@@ -72,15 +72,15 @@ div.secondary-text span {
 
 #title-info #title-info-bg-img-sec {
     position: absolute;
-    width: 25%;
+    width: 30%;
 }
 #title-info #title-info-bg-img-fir {
     right: 0;
     top: 0;
 }
 #title-info #title-info-bg-img-sec {
-    left: 0;
-    bottom: 0;
+    left: 10%;
+    bottom: 5%;
 }
 @media (max-width: 1400px) {
     #title-info #title-info-bg-img-fir,

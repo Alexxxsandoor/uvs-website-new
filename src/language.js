@@ -2,7 +2,7 @@ const LANGUAGE = {
   eng: {
     intro: {
       top: `United Business Travel Solutions`,
-      bottom: `Meetings.Incentives.Conferences.Exhibitions`,
+      bottom: `Meetings. Incentives. Conferences. Exhibitions`,
     },
     firstTitle: {
       title:`Welcome to UVS, a leading and engaging space for those seeking high-quality services in business meetings, business event creation, and business travel.`,
@@ -101,7 +101,7 @@ const LANGUAGE = {
   ukr: {
     intro: {
       top: `Обʼєднані рішення для ділового туризму`,
-      bottom: `Зустрічі.Інсентиви.Конференції.Виставки`,
+      bottom: `Зустрічі. Інсентиви. Конференції. Виставки`,
     },
     firstTitle: {
       title: `Ласкаво просимо до UVS провідного і привабливого простору для тих, хто шукає якісні послуги в сфері бізнес зустрічей, створення бизнес подій та бізнес подорожей. `,
@@ -206,7 +206,7 @@ const LANGUAGE = {
   rus: {
     intro: {
       top: `Объеденённые решения для делового туризма`,
-      bottom: `Встречи.Инсентив-туры.Конференции.Выставки`,
+      bottom: `Встречи. Инсентив-туры. Конференции. Выставки`,
     },
     firstTitle: {
       title: `Добро пожаловать в UVS, ведущее и привлекательное пространство для тех, кто ищет качественные услуги в сфере бизнес встреч, создания бизнес событий и бизнес путешествий.`,
