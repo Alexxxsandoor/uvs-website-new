@@ -54,14 +54,24 @@
 }
 
 @font-face {
-  font-family: "Halvar Breit Lt";
-  src: url("./font/HalvarBreit-Lt.ttf");
+  font-family: "HalvarBreitLt";
+  src: url("./font/HalvarBreit-Lt.eot");
+  src:
+    local("Halvar Breitschrift Light"),
+    local("HalvarBreit-Lt"),
+    url("./font/HalvarBreit-Lt.eot?#iefix") format("embedded-opentype"),
+    url("./font/HalvarBreit-Lt.woff2") format("woff2"),
+    url("./font/HalvarBreit-Lt.woff") format("woff"),
+    url("./font/HalvarBreit-Lt.ttf") format("truetype");
+  font-weight: 100 !important;
+  font-style: normal;
+  font-display: swap;
 }
 
 body {
   /* font-family: "corbell" !important; */
   /* font-family: "Helvetica Neue", sans-serif; */
-  font-family: "Halvar Breit Lt", sans-serif !important;
+  font-family: "HalvarBreitLt", "corbell", sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-touch-callout: none;
