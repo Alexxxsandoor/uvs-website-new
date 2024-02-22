@@ -78,3 +78,6 @@
     position: absolute;
     bottom: 20px;
 }
+#first-intro h4 span {
+    font-size: 48px !important;
+}
