@@ -78,6 +78,9 @@
     position: absolute;
     bottom: 20px;
 }
+#uvs-text p {
+    font-weight: 300 !important;
+}
 #first-intro h4 span {
     font-size: 48px !important;
 }
