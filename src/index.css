@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 @import url("https://fonts.cdnfonts.com/css/helvetica-neue-5");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 :root {
   --blue-90: #150aac;
   --blue-70: #1c81c4;
@@ -48,28 +49,10 @@
   );
 }
 
-@font-face {
-  font-family: "corbell";
-  src: url("./font/corbell.ttf");
-}
-
-@font-face {
-  font-family: "Halvar Breit Lt";
-  src: url("./font/HalvarBreit-Lt.eot");
-  src:
-    url("./font/HalvarBreit-Lt.eot?#iefix") format("embedded-opentype"),
-    url("./font/HalvarBreit-Lt.woff2") format("woff2"),
-    url("./font/HalvarBreit-Lt.woff") format("woff"),
-    url("./font/HalvarBreit-Lt.ttf") format("truetype");
-  font-weight: 100 !important;
-  font-style: normal;
-  font-display: swap;
-}
-
 body {
   /* font-family: "corbell" !important; */
   /* font-family: "Helvetica Neue", sans-serif; */
-  font-family: "Halvar Breit Lt", "corbell", sans-serif !important;
+  font-family: "Raleway", sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-touch-callout: none;
@@ -78,11 +61,9 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  font-weight: 300 !important;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
-}
 h1,
 h2,
 h3,
@@ -91,7 +72,7 @@ h5,
 h6,
 p,
 a {
-  font-weight: 100 !important;
+  font-weight: 300 !important;
 }
 
 ul {
