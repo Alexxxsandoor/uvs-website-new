@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/uvs-website-new/static/css/main.6875d10b.css",
+    "main.css": "/uvs-website-new/static/css/main.684dbf82.css",
     "main.js": "/uvs-website-new/static/js/main.7d307d5d.js",
     "static/media/Business_travel.jpg": "/uvs-website-new/static/media/Business_travel.472ddee03eb2ad4c6f5d.jpg",
     "static/media/Business_events.jpg": "/uvs-website-new/static/media/Business_events.707f225733bacd814f30.jpg",
@@ -10,11 +10,11 @@
     "static/media/bg-image.svg": "/uvs-website-new/static/media/bg-image.c2bcacddf24e830617cb32450932387d.svg",
     "static/media/logo12.svg": "/uvs-website-new/static/media/logo12.cfdf2223dc9cb1938778b7c1328332f3.svg",
     "index.html": "/uvs-website-new/index.html",
-    "main.6875d10b.css.map": "/uvs-website-new/static/css/main.6875d10b.css.map",
+    "main.684dbf82.css.map": "/uvs-website-new/static/css/main.684dbf82.css.map",
     "main.7d307d5d.js.map": "/uvs-website-new/static/js/main.7d307d5d.js.map"
   },
   "entrypoints": [
-    "static/css/main.6875d10b.css",
+    "static/css/main.684dbf82.css",
     "static/js/main.7d307d5d.js"
   ]
 }
