@@ -26,7 +26,7 @@ div.secondary-text span {
     margin: 10px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 992px) {
     #title-info p {
         text-align: left !important;
         max-width: 250px;

@@ -43,7 +43,7 @@ const LANGUAGE = {
           "VIP support",
       ],      },
       card3: {
-        title: `CONFERENCES/SEMINARS`,
+        title: `CONFERENCES / SEMINARS`,
         body: [
           "Conference organization",
           "Participation in global events",
