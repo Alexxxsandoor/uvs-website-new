@@ -1,5 +1,5 @@
-#title-info {
-    margin-top: 50px;
+#first-title-info {
+    margin-top: 20px;
 }
 #title-info .secondary-text {
     margin-top: 5rem;
@@ -27,14 +27,19 @@ div.secondary-text span {
 }
 
 @media (max-width: 992px) {
+    #title-info {
+        padding-top: 30px;
+    }
+
+    #title-info h4.title {
+        margin-top: 20px;
+    }
     #title-info p {
         text-align: left !important;
         max-width: 250px;
-        padding: 10px;
     }
 
     #title-info h4 {
-        padding: 10px;
         max-width: 700px;
     }
     #title-info h5 {
@@ -48,7 +53,6 @@ div.secondary-text span {
 @media (max-width: 524px) {
     #title-info p {
         min-width: 100%;
-        padding: 10px;
     }
     #title-info h4 {
         margin: 0;

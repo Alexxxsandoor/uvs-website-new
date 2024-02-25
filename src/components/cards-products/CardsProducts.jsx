@@ -31,7 +31,7 @@ const CardsProducts = () => {
     return (
         <section id='cards-products'>
             <div className='container'>
-                <h5 className='title-block'><b>{title}</b></h5>
+                <h5 className='title-block'>{title}</h5>
                 <motion.div 
                     initial="hidden"
                     whileInView="visible" 

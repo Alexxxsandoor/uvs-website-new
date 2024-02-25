@@ -2,6 +2,7 @@ import React from 'react';
 import './gif-full-width.style.css'
 import {motion} from 'framer-motion'
 import photo from '../../images/big-img/big_photo_short.jpg'
+import photo_mobile from '../../images/big-img/big_photo_short_mobile.jpg'
 
 const imgAnimation = {
     hidden:{
@@ -26,7 +27,8 @@ const GifFullWidth = () => {
                 className="container"
                 variants={imgAnimation}
                 >
-                <img  id='gif-full-width' src={photo}/>
+                <img id='gif-full-width' src={photo}/>
+                <img id='gif-full-width_mobile' src={photo_mobile}/>
             </motion.div>
         </div>
     );

@@ -21,10 +21,10 @@ const Title = () => {
   const { title } = LANGUAGE[language].firstTitle;
 
   return (
-    <motion.section initial="hidden" whileInView="visible" id="title-info">
+    <motion.section initial="hidden" whileInView="visible" id="first-title-info">
       <div className="container">
         <motion.h4 custom={1} className="title" variants={textLeftAnimation}>
-          <b>{title}</b>
+          <p>{title}</p>
         </motion.h4>
       </div>
     </motion.section>

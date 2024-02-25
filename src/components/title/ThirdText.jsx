@@ -18,7 +18,7 @@ const textLeftAnimation = {
 };
 const textRightAnimation = {
   hidden: {
-    x: 100,
+    x: -200,
     opacity: 0,
   },
   visible: (custom) => ({
