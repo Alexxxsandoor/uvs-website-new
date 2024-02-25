@@ -30,6 +30,9 @@ div.secondary-text span {
     #title-info {
         padding-top: 30px;
     }
+    #first-title-info p {
+        text-align: justify;
+    }
 
     #title-info h4.title {
         margin-top: 20px;
