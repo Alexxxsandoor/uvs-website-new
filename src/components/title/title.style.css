@@ -32,6 +32,7 @@ div.secondary-text span {
     }
     #first-title-info p {
         text-align: justify;
+        word-spacing: -2px;
     }
 
     #title-info h4.title {
@@ -54,6 +55,13 @@ div.secondary-text span {
     }
 }
 @media (max-width: 524px) {
+    #title-info h5 {
+        max-width: 100%;
+        padding: 0 !important;
+        text-align: justify;
+        word-spacing: -2px;
+        margin: 20px 0;
+    }
     #title-info p {
         min-width: 100%;
     }

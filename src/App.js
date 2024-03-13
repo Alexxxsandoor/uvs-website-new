@@ -19,7 +19,6 @@ function App() {
       <ThirdText />
       <LeftText />
       <SmallCards/>
-      {/* <Pricing /> */}
       <CenterText />
       <Footer />
     </div>
