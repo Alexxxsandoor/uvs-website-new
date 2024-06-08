@@ -15,6 +15,7 @@
     animation: gradient 5s infinite linear;
     background-size: 400%;
     font-weight: 100 !important;
+    min-height: 600px !important;
 }
 
 @keyframes gradient {
@@ -77,6 +78,11 @@
 #uvs-text {
     position: absolute;
     bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
 }
 #uvs-text p {
     font-weight: 300 !important;

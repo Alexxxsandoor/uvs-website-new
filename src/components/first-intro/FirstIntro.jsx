@@ -38,11 +38,13 @@ const FirstIntro = () => {
                             <motion.img custom={2} variants={textAnimation} src={logo}/>
                             <motion.h4 custom={3} variants={textAnimation} className='text-center'><span>U</span><span>V</span><span>S</span></motion.h4>
                         </div>
-                        <motion.div id='uvs-text' custom={4} variants={textAnimation} className='text-center mt-4'>
+                    </div>
+                    <motion.div id='uvs-text' custom={4} variants={textAnimation} className='text-center'>
+                        <div className='d-flex flex-column justify-content-center align-items-center'>
                             <p>{top}</p>
                             <p>{bottom}</p>
-                        </motion.div>
-                    </div>
+                        </div>
+                    </motion.div>
                 </div>
             </motion.section>
         </>
